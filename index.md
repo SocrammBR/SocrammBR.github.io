@@ -1,7 +1,6 @@
-<!doctype html>
 <html>
 <head>
-<h1>Teste</h1>
+<h1>GAY</h1>
 </head>
 <body>
 <p>Você é gay</p>
