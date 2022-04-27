@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-BR">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Site top</title>
   <head>
     <style>
       body {
-        text-align:center
+        text-align: center;
       }
       .a {
         font-size: 3rem;
-        color: #333;
+        color: rgb(240, 208, 187);
       }
       .b {
         text-decoration: underline;
@@ -19,24 +21,50 @@
         padding-bottom: 15px;
         padding-right: 35px;
         padding-left: 35px;
-        background-color: green;
+        background-color: rgba(155, 50, 2, 0.863);
+        flex-direction: row;
+        border-radius: 10px;
       }
       a {
         text-decoration: none;
         color: black;
         text-align: center;
       }
+      div.box {
+        margin: 0;
+        background: rgb(87, 18, 18);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        width: 50%;
+        height: 40%;
+        box-shadow: 5px 5px 5px linear-gradient(90deg, rgba(122,24,24,1) 0%, rgba(87,18,18,1) 35%, rgba(87,18,18,0.5) 100%);
+      }
+      html{
+        background-color: rgb(44, 11, 11);
+      }
     </style>
     <script>
       function mudartexto() {
-        document.getElementById("botao").innerHTML = "girls"
+        if (document.getElementById('botao').innerHTML === 'Aperte Aqui') {
+          document.getElementById('botao').innerHTML = 'GAY'
+        } else {
+          document.getElementById('botao').innerHTML = 'Aperte Aqui'
+        }
       }
     </script>
     <title>Site</title>
   </head>
   <body>
-    <h1 class="a b" ;>Titulo</h1>
-    <a class="botaotop" ; href="https://youtu.be/dQw4w9WgXcQ">CLIQUE AQUI</a>
-    <button class="botaotop" ; id="botao" onclick="mudartexto()">Carioca</button>
+    <div class="box">
+      <h1 class="a b" ;>Titulo</h1>
+      <a class="botaotop" ; href="https://youtu.be/dQw4w9WgXcQ">CLIQUE AQUI</a>
+      <button class="botaotop" ; id="botao" onclick="mudartexto()">
+        Aperte Aqui
+      </button>
+    </div>
   </body>
 </html>
