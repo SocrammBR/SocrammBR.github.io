@@ -1,0 +1,18 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.loaded div#home > * {
+    animation: fadeIn 1s ease-in 0.7s forwards;
+}
+   
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+     
+  100% {
+    opacity: 1;
+  }
+}
+   

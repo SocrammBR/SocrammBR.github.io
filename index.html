@@ -1,70 +1,23 @@
 <!DOCTYPE html>
-
-<html lang="pt-BR">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Site top</title>
-  <head>
-    <style>
-      body {
-        text-align: center;
-      }
-      .a {
-        font-size: 3rem;
-        color: rgb(240, 208, 187);
-      }
-      .b {
-        text-decoration: underline;
-      }
-      .botaotop {
-        color: white;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-right: 35px;
-        padding-left: 35px;
-        background-color: rgba(155, 50, 2, 0.863);
-        flex-direction: row;
-        border-radius: 10px;
-      }
-      a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-      }
-      div.box {
-        margin: 0;
-        background: rgb(87, 18, 18);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        border-radius: 5px;
-        width: 50%;
-        height: 40%;
-        box-shadow: 5px 5px 5px linear-gradient(90deg, rgba(122,24,24,1) 0%, rgba(87,18,18,1) 35%, rgba(87,18,18,0.5) 100%);
-      }
-      html{
-        background-color: rgb(44, 11, 11);
-      }
-    </style>
-    <script>
-      function mudartexto() {
-        if (document.getElementById('botao').innerHTML === 'Aperte Aqui') {
-          document.getElementById('botao').innerHTML = 'GAY'
-        } else {
-          document.getElementById('botao').innerHTML = 'Aperte Aqui'
-        }
-      }
-    </script>
-    <title>Site</title>
-  </head>
-  <body>
-    <div class="box">
-      <h1 class="a b" ;>Titulo</h1>
-      <a class="botaotop" ; href="https://youtu.be/dQw4w9WgXcQ">CLIQUE AQUI</a>
-      <button class="botaotop" ; id="botao" onclick="mudartexto()">
-        Aperte Aqui
-      </button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Marcos :)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./src/js/main.js"></script>
+</head>
+<body>
+    <div class="h-[100vh] min-h-[100vh] bg-gradient-to-bl from-gray-800 via-gray-900 to-black flex items-center text-gray-300 px-[3.5rem]" id="home">
+      <h1 class="text-6xl opacity-0">
+        Oi, meu nome é <span class="text-transparent bg-clip-text bg-gradient-to-tl from-green-700 to-cyan-300">Antonio Marcos</span>.
+        <br>
+        E eu sou um desenvolvedor :)
+      </h1>
     </div>
-  </body>
-</html>
+</body>
